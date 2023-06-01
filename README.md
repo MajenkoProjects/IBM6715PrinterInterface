@@ -9,6 +9,12 @@ and between us we have managed to get something working - and this is it.
 The Arduino uses pins 0/1 for the TX/RX, and pin 2 for the byte acknowlege signal
 from the typewriter, and pin 3 for the "I want to send" signal to the typewriter.
 
+This is programmed for an Arduino Leonardo - the reason being we want to use the
+USB interface for the PC communication at the same time as the UART for printer
+communication. Yes, we could use SoftwareSerial, but i *hate* that with a
+passion. Better to use a more suitable microcontroller than bitbang serial like that!
+
+
 (wiring diagram to follow)
 
 ----
