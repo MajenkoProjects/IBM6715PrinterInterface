@@ -45,3 +45,6 @@ that initializes the typewriter into printer mode, which is 0xA100 0xA400 0xA200
 switches it offline again (never to return without a power cycle it seems). The 0x821F seems to
 be a bit of an anomaly in the formation of the commands, so we're a little puzzled by that one.
 
+From what we have found so far there is no way to automatically send the carriage back to the home
+posistion. Instead you have to keep track of where it is as you type characters then use the
+0xEnnn command to reverse it the correct distance.
