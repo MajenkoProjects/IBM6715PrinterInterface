@@ -32,12 +32,12 @@ bit of the second byte is set the head will auto-advance to the next character.
 If the high bit of the first byte is set then it's a system control packet.  These commands
 use the first nibble to define the command then the following 12 bits as a single value.
 
-0x8nnn - Set the character pitch  as nnn/120" 
-0xAn00 - System configuration - see below.
-0xCnnn - Move the carriage forward by nnn/120"
-0xDnnn - Advance the paper by nnn/96"
-0xEnnn - Move the carriage backwards by nnn/120"
-0xFnnn - Retract the paper by nnn/96"
+* 0x8nnn - Set the character pitch  as nnn/120" 
+* 0xAn00 - System configuration - see below.
+* 0xCnnn - Move the carriage forward by nnn/120"
+* 0xDnnn - Advance the paper by nnn/96"
+* 0xEnnn - Move the carriage backwards by nnn/120"
+* 0xFnnn - Retract the paper by nnn/96"
 
 
 The system configuration commands An00 are a bit of a mystery.  There is an "online" command 
