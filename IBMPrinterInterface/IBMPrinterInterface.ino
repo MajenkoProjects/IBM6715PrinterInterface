@@ -70,8 +70,8 @@ void initPrinter() {
 	sendByte(0x00);
 	sendByte(0x82);
 	sendByte(0x1F);
-	sendByte(0xC0);
-	sendByte(0x78);
+//	sendByte(0xC0);
+//	sendByte(0x78);
 
 	sendByte(0x80);
 	sendByte(12); // 1/10"
